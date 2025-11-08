@@ -1,0 +1,16 @@
+class Vector2D {
+	float x;
+	float y;
+}
+
+class  Situation1 {
+	Vector2D p = new Vector2D();
+	Vector2D q = new Vector2D(); 
+	Vector2D r = p;
+	p.x = 1.0;
+	p.y = 30.9;
+	q.x = -7.1;
+	q.y = 10.5;
+}
+
+
