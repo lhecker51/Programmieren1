@@ -25,6 +25,5 @@ public class FormatDemo {
         System.out.printf("%25.2f%n", d);
         System.out.printf("%25E%n", d);
         System.out.printf("%25A%n", d);
-
     }
 }

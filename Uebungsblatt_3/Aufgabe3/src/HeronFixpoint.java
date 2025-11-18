@@ -16,6 +16,7 @@ public class HeronFixpoint {
                 a = scanner.nextDouble();
                 gotNumber = true;
             } catch (InputMismatchException e) {
+                scanner.nextLine();
                 System.out.println("Must be an integer");
             }
 
@@ -31,7 +32,6 @@ public class HeronFixpoint {
         int counter = 1;
         boolean isSameNumber = false;
 
-        
         while (!isSameNumber) {
             double newX = 0.5 * (x + a/x);
             if (newX == x) {
