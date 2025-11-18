@@ -17,9 +17,9 @@ public class Heron10 {
                 a = scanner.nextDouble();
                 gotNumber = true;
             } catch (InputMismatchException e) {
+                scanner.nextLine();
                 System.out.println("Must be an integer");
             }
-
             //check if number is positive
             if (a < 0) {
                 System.out.println("Please enter a positive number");
