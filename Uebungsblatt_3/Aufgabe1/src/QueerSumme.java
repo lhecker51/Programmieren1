@@ -17,7 +17,6 @@ public class QueerSumme {
             y = y + (x % 16);
             x = (x / 16);
         }
-
         return y;
     }
 
@@ -32,8 +31,9 @@ public class QueerSumme {
             int z = sc.nextInt(16);
             int ergebnis1 = queersumme(x);
             int ergebnis2 = queersummeHex(z);
+            //ergebnis2 = Integer.parseInt(ergebnis2, 16);
             System.out.println("Die Quersumme der DezimalZahl lautet: " + ergebnis1);
-            System.out.printf("Die Quersumme der HexadezimalZahl lautet: 0x%x (%d)\n", ergebnis2, ergebnis2);
+            System.out.printf("Die Quersumme der HexadezimalZahl lautet: 0x%x \n", ergebnis2);
         } catch (Exception e) {
             System.out.println("Bitte eine valide Zahl eingeben.");
         }
