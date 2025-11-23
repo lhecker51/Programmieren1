@@ -1,4 +1,3 @@
-import java.math.*;
 public class Complex {
     double real;
     double imaginary;
