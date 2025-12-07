@@ -7,13 +7,11 @@ public class Factorial {
         if (n == 0) {
             return BigInteger.ONE;
         } else {
-            int i = n-1;
-            int x = n;
-            while(i > 0) {
-                x =  x * i;
-                i--;
+            BigInteger result = BigInteger.ONE;
+            for (int i = 2; i <= n; i++) {
+                result = result.multiply(BigInteger.valueOf(i));
             }
-            return new BigInteger(String.valueOf(x));
+            return result;
         }
     }
 
